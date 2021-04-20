@@ -1,0 +1,30 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* Variables */
+:root {
+  --dark-blue: hsl(233deg, 47%, 7%);
+  --saturated-blue: hsl(244deg, 38%, 17%);
+  --soft-violet: hsl(277deg, 64%, 61%);
+  --light-clr: hsl(0deg, 0%, 100%);
+  --light-opacity1: hsl(0deg, 0%, 100%, 0.75);
+  --light-opacity2: hsl(0deg, 0%, 100%, 0.6);
+}
+
+html {
+  font-family: "Inter", "Lexend Deca", sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+}
