@@ -9,6 +9,7 @@
   --light-clr: hsl(0deg, 0%, 100%);
   --light-opacity1: hsl(0deg, 0%, 100%, 0.75);
   --light-opacity2: hsl(0deg, 0%, 100%, 0.6);
+  --radius: 8px;
 }
 
 html {
@@ -46,4 +47,27 @@ ul[class] {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+/* PREVIEW CARD */
+.card {
+  width: 80%;
+  max-width: 1440px;
+  margin: auto;
+  background-color: var(--saturated-blue);
+  border-radius: var(--radius);
+}
+
+.card-image {
+  background-image: url("../img/image-header-mobile.jpg");
+  background-color: var(--soft-violet);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  height: 23rem;
+  mix-blend-mode: lighten;
+  background-blend-mode: hard-light;
+  filter: brightness(90%);
 }
