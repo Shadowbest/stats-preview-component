@@ -27,6 +27,7 @@ html {
 
 body {
   margin: 0;
+  padding: 5rem 0;
   font-size: 1.5rem;
   background-color: var(--dark-blue);
   min-height: 100vh;
@@ -43,10 +44,8 @@ h4 {
   font-weight: 700;
 }
 
-ul[class] {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.highlight {
+  color: var(--soft-violet);
 }
 
 /* PREVIEW CARD */
@@ -70,4 +69,44 @@ ul[class] {
   mix-blend-mode: lighten;
   background-blend-mode: hard-light;
   filter: brightness(90%);
+}
+
+.info {
+  padding: 1.6rem;
+  text-align: center;
+}
+
+.info-title {
+  color: var(--light-clr);
+  margin: auto;
+  font-size: 2.6rem;
+}
+
+.info-body {
+  color: var(--light-opacity1);
+  font-size: 1.35rem;
+  width: 28ch;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.stats {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  gap: 2rem;
+  margin: 3rem 0 1rem;
+}
+
+.stats-item {
+  color: var(--light-opacity1);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.stats-item strong {
+  display: block;
+  color: var(--light-clr);
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
 }
