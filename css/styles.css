@@ -63,8 +63,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
+  border-radius: var(--radius) var(--radius) 0 0;
   height: 23rem;
   mix-blend-mode: lighten;
   background-blend-mode: hard-light;
@@ -109,4 +108,45 @@ h4 {
   color: var(--light-clr);
   font-size: 2.3rem;
   margin-bottom: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .card {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-image {
+    grid-column: 2 / 3;
+    background-image: url("../img/image-header-desktop.jpg");
+    height: 100%;
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
+  .info {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    text-align: left;
+    padding: 10rem 6rem;
+  }
+
+  .info-title {
+    max-width: 18ch;
+    font-size: 3.45rem;
+  }
+
+  .info-body {
+    width: 40ch;
+    margin: 1.5rem 0;
+    font-size: 1.4rem;
+  }
+
+  .stats {
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
 }
