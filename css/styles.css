@@ -58,11 +58,7 @@ h4 {
 }
 
 .card-image {
-  background-image: url("../img/image-header-mobile.jpg");
-  background-color: var(--soft-violet);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: var(--soft-violet) url("../img/image-header-mobile.jpg") center/cover no-repeat;
   border-radius: var(--radius) var(--radius) 0 0;
   height: 23rem;
   mix-blend-mode: lighten;
